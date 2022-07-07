@@ -17,13 +17,15 @@
 #define TCYAN   "\033[2;36m"
 #define EMPTY   "\033[0m"
 
-static void modify_v(int a) {
+static void modify_v(int a)
+{
   printf("Value of argument a in modify_v: %s%20d%s\n", RED, a, EMPTY);
   printf("Address of argument a in modify_v: %s%18p%s\n", TCYAN, (void *)&a, EMPTY);
   a = 32;
 }
 
-static void modify_p(int *a) {
+static void modify_p(int *a)
+{
   printf("Value of argument a in modify_p: %s%20d%s\n", BLUE, *a, EMPTY);
   printf("Address of argument a in modify_p: %s%18p%s\n", TGREEN, (void *)&a, EMPTY);
   *a = 32;
