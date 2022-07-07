@@ -10,12 +10,14 @@
 
 #include <stdio.h>
 
-static int  modify_v(int a) {
+static int  modify_v(int a)
+{
   a <<= 1;
   return a;
 }
 
-static void modify_p(int *a) {
+static void modify_p(int *a)
+{
   *a <<= 2;
 }
 
